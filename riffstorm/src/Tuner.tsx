@@ -23,9 +23,8 @@ function Tuner({ onBack }: TunerProps) {
 
         <div className="panel">
           <h2>Current Note</h2>
-          <div className="note">{tunerData?.note ?? '-'}</div>
-          <p className="status">+10 cents</p>
-          <p className="status">Waiting for microphone input...</p>
+          <div className="note">{tunerData?.note ?? 'idk'}</div>
+          <p className="status">{tunerData ? `${tunerData.cents > 0 ? '+' : ''}${tunerData.cents} cents`: '+0 cents'}</p>
         </div>
 
         <div className="actions">

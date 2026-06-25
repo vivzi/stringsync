@@ -3,7 +3,7 @@ import { PitchDetector } from 'pitchy';
 
 const FFT_SIZE = 2048; // how many audio samples to analyse per frame
 const MIN_CLARITY = 0.8; // how clear the pitch detection must be to consider it valid
-const MIN_RMS = 0.01; // how loud the audio must be to consider it valid
+const MIN_RMS = 0.15; // how loud the audio must be to consider it valid
 const MIN_FREQUENCY = 82; // lowest frequency to detect (E2)
 const MAX_FREQUENCY = 1319; // highest frequency to detect (E6)
 
